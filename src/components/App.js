@@ -4,7 +4,6 @@ import "../styles/App.css";
 
 class App extends React.Component {
   handleClick() {
-    console.log("rendered");
     this.setState({ count: this.state.count + 1 });
   }
   constructor(props) {
@@ -14,6 +13,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log("rendered");
     return (
       <div id="main">
         <div id="count">{this.state.count}</div>
